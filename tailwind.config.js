@@ -13,7 +13,8 @@ module.exports = {
         headerColor: '#3C4242',
         borderColor: '#8A33FD',
         buttonBorder: '#333333',
-        authBorder: '#3C4242'
+        authBorder: '#3C4242',
+        paragrapghText: '#807D7E'
       },
       width: {
         formWidth: '600px'
