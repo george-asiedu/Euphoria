@@ -5,12 +5,12 @@ import { SigninComponent } from './auth/signin/signin.component';
 export const routes: Routes = [
     {
         path: 'signup',
-        title: 'DripLuxury Closet - Signup Page',
+        title: 'Euphoria - Signup Page',
         component: SignupComponent
     },
     {
         path: 'signin',
-        title: 'DripLuxury Closet - Signin Page',
+        title: 'Euphoria - Signin Page',
         component: SigninComponent
     }
 ];
