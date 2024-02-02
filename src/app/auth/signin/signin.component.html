@@ -7,18 +7,63 @@
         <div class="flex flex-col gap-4 py-20 px-40">
             <h2 class="text-headerColor font-bold text-3xl mb-5">Sign In Page</h2>
             <div class="w-formWidth">
-                <div 
+                <button 
                     class="w-full border border-authBorder flex items-center gap-4 justify-center h-12 rounded-lg mb-5 cursor-pointer hover:border-borderColor hover:bg-search"
                 >
                     <img src="../../../assets/Google.svg" alt="google-icon">
                     <h4 class="text-borderColor font-bold text-lg">Continue with Google</h4>
-                </div>
-                <div 
-                    class="w-full border border-authBorder flex items-center gap-4 justify-center h-12 rounded-lg cursor-pointer hover:border-borderColor hover:bg-search"
+                </button>
+                <button 
+                    class="w-full border border-authBorder flex items-center gap-4 justify-center h-12 rounded-lg cursor-pointer hover:border-borderColor hover:bg-search mb-10"
                 >
                     <img src="../../../assets/twitter.svg" alt="twitter-icon">
                     <h4 class="text-borderColor font-bold text-lg">Continue with Twitter</h4>
+                </button>
+
+                <div class="flex items-center gap-4 mb-12">
+                    <span class="w-72 h-px bg-gray-400"></span>
+                    <h5 class="text-lg text-authBorder">OR</h5>
+                    <span class="w-72 h-px bg-gray-400"></span>
                 </div>
+
+                <form class="w-full flex flex-col gap-4">
+                    <div class="flex flex-col gap-2">
+                        <label for="email" class="font-bold text-headerColor">Email</label>
+                        <input 
+                            type="email" 
+                            class="w-full border border-authBorder h-12 rounded-lg px-5 outline-1 hover:border-borderColor focus-within:outline-borderColor"
+                        >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <div class="flex items-center justify-between">
+                            <label for="email" class="font-bold text-headerColor">Password</label>
+                            <div class="flex items-center gap-3">
+                                <img src="../../../assets/icon-hide-preview.svg" alt="icon-hide-preview">
+                                Hide
+                            </div>
+                        </div>
+                        <input 
+                            type="password" 
+                            class="w-full border border-authBorder h-12 rounded-lg px-5 outline-1 hover:border-borderColor focus-within:outline-borderColor"
+                        >
+                        <div class="flex items-center justify-between mb-10">
+                            <span class="flex items-center gap-2">
+                                <input type="checkbox">
+                                <p class="text-sm">Remember Me</p>
+                            </span>
+                            <a routerLink="" class="text-sm underline hover:text-borderColor">Forget your password?</a>
+                        </div>
+                    </div>
+                    <button 
+                        class="bg-borderColor w-32 h-12 text-white text-xl rounded-lg hover:bg-purple-700"
+                    >
+                        Sign in
+                    </button>
+                    <p>
+                        Don't have an account?
+                        <a routerLink="signup" class="text-borderColor underline">Sign up</a>
+                    </p>
+                </form>
             </div>
             
         </div>
