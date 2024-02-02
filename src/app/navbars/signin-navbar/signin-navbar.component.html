@@ -1,13 +1,28 @@
-<div class="w-full h-auto shadow-lg px-24 py-5 flex items-center">
-    <h1 class="text-headerColor text-3xl italic font-bold">DripLuxury Closet</h1>
-    <div 
-        class="bg-search ml-24 flex items-center w-56 h-auto border-none rounded-lg px-10 py-2 gap-2 focus-within:border-borderColor"
-    >
-        <fa-icon [icon]="faSearch"></fa-icon>
-        <input 
-            type="text" 
-            placeholder="Search" 
-            class="border-none focus-within:outline-none pl-2 w-40 bg-inherit placeholder:italic"
+<div class="w-full h-auto shadow-lg px-32 py-6 flex justify-between">
+    <div class="flex items-center gap-32">
+        <h1 class="text-headerColor text-3xl italic font-bold">DripLuxury Closet</h1>
+        <div 
+            class="bg-search flex items-center w-56 h-auto border rounded-lg px-10 py-2 gap-2 focus-within:border-buttonBorder"
         >
+            <fa-icon [icon]="faSearch"></fa-icon>
+            <input 
+                type="text" 
+                placeholder="Search" 
+                class="w-full border-none focus-within:outline-none pl-2 bg-inherit placeholder:italic"
+            >
+        </div>
+    </div>
+
+    <div class="flex items-center gap-6">
+        <button 
+            class="bg-buttonBg text-white px-8 py-2 rounded-md hover:bg-white hover:border hover:border-buttonBorder hover:text-borderColor"
+        >
+            Signin
+        </button>
+        <button 
+            class="text-borderColor px-8 py-2 rounded-md border border-buttonBorder font-bold hover:border-borderColor"
+        >
+            Signup
+        </button>
     </div>
 </div>
