@@ -26,7 +26,7 @@
                     <span class="w-72 h-px bg-gray-400"></span>
                 </div>
 
-                <form class="w-full flex flex-col gap-4">
+                <form class="w-full flex flex-col gap-4" (ngSubmit)="onSubmit()">
                     <div class="flex flex-col gap-2">
                         <label for="email" class="font-bold text-headerColor">Email</label>
                         <input 
@@ -48,13 +48,14 @@
                         >
                         <div class="flex items-center justify-between mb-10">
                             <span class="flex items-center gap-2">
-                                <input type="checkbox">
+                                <input type="checkbox" [(ngModel)]="rememberMe">
                                 <p class="text-sm">Remember Me</p>
                             </span>
                             <a routerLink="" class="text-sm underline hover:text-borderColor">Forget your password?</a>
                         </div>
                     </div>
                     <button 
+                        routerLink=""
                         class="bg-borderColor w-32 h-12 text-white text-xl rounded-lg hover:bg-purple-700"
                     >
                         Sign in
