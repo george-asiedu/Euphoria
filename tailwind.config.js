@@ -8,7 +8,7 @@ module.exports = {
       backgroundColor: {
         search: '#F6F6F6',
         buttonBg: '#8A33FD',
-        footerBg: '#2A2F2F'
+        footerBg: '#3C4242'
       },
       colors: {
         headerColor: '#3C4242',
