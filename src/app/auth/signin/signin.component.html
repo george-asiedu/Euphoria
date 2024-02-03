@@ -1,10 +1,10 @@
-<div class="w-full h-screen overflow-hidden">
+<div class="w-full h-screen overflow">
     <app-signin-navbar/>
     <div class="grid grid-cols-2">
         <div>
             <img src="../../../assets/login-img.png" class="w-full" alt="login-image">
         </div>
-        <div class="flex flex-col gap-4 py-20 px-40">
+        <div class="flex flex-col gap-4 py-20 px-16">
             <h2 class="text-headerColor font-bold text-3xl mb-5">Sign In Page</h2>
             <div class="w-formWidth">
                 <button 
@@ -31,6 +31,7 @@
                         <label for="email" class="font-bold text-headerColor">Email</label>
                         <input 
                             type="email" 
+                            [(ngModel)]="email"
                             class="w-full border border-authBorder h-12 rounded-lg px-5 outline-1 hover:border-borderColor focus-within:outline-borderColor"
                         >
                     </div>
@@ -44,6 +45,7 @@
                         </div>
                         <input 
                             type="password" 
+                            [(ngModel)]="password"
                             class="w-full border border-authBorder h-12 rounded-lg px-5 outline-1 hover:border-borderColor focus-within:outline-borderColor"
                         >
                         <div class="flex items-center justify-between mb-10">

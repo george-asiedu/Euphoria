@@ -1,0 +1,45 @@
+<div class="overflow-hidden w-full h-20 shadow-md fixed top-0 px-20 flex items-center justify-between">
+    <img src="../../../assets/Logo.svg" alt="logo-image">
+    <nav>
+        <ul class="inline-block">
+            <li class="float-left mr-5">
+                <a routerLink="/shop" class="text-center text-lg text-paragrapghText px-2 active:text-headerColor hover:text-headerColor hover:font-bold">Shop</a>
+            </li>
+            <li class="float-left mr-5">
+                <a routerLink="/men" class="text-center text-lg text-paragrapghText px-2 active:text-headerColor hover:text-headerColor hover:font-bold">Men</a>
+            </li>
+            <li class="float-left mr-5">
+                <a routerLink="/women" class="text-center text-lg text-paragrapghText px-2 active:text-headerColor hover:text-headerColor hover:font-bold">Women</a>
+            </li>
+            <li class="float-left mr-5">
+                <a routerLink="/combos" class="text-center text-lg text-paragrapghText px-2 active:text-headerColor hover:text-headerColor hover:font-bold">Combos</a>
+            </li>
+            <li class="float-left mr-5">
+                <a routerLink="/joggers" class="text-center text-lg text-paragrapghText px-2 active:text-headerColor hover:text-headerColor hover:font-bold">Joggers</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div 
+        class="bg-search flex items-center w-60 h-auto border rounded-lg px-10 py-2 gap-2 focus-within:border-buttonBorder hover:border-buttonBorder"
+    >
+        <fa-icon [icon]="faSearch"></fa-icon>
+        <input 
+            type="text" 
+            placeholder="Search" 
+            class="w-full border-none focus-within:outline-none pl-2 bg-inherit placeholder:italic"
+        >
+    </div>
+
+    <div class="flex items-center gap-3">
+        <span class="w-11 bg-search h-11 flex items-center p-2 justify-center rounded-lg">
+            <img src="../../../assets/heart.svg" alt="heart">
+        </span>
+        <span class="w-11 bg-search h-11 flex items-center p-2 justify-center rounded-lg">
+            <img src="../../../assets/user.svg" alt="heart">
+        </span>
+        <span class="w-11 bg-search h-11 flex items-center p-2 justify-center rounded-lg">
+            <img src="../../../assets/shopping cart.svg" alt="heart">
+        </span>
+    </div>
+</div>
