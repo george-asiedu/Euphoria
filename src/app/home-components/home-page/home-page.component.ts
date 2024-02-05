@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MainNavbarComponent } from '../navbars/main-navbar/main-navbar.component';
-import { FooterComponent } from '../footer/footer.component';
+import { MainNavbarComponent } from '../../navbars/main-navbar/main-navbar.component';
+import { FooterComponent } from '../../footer/footer.component';
 
 @Component({
   selector: 'app-home-page',
