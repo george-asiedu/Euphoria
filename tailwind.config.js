@@ -15,7 +15,8 @@ module.exports = {
         borderColor: '#8A33FD',
         buttonBorder: '#333333',
         authBorder: '#3C4242',
-        paragrapghText: '#807D7E'
+        paragrapghText: '#807D7E',
+        footerBoder: '#BEBCBD'
       },
       width: {
         formWidth: '600px'
