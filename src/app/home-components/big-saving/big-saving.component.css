@@ -1,0 +1,20 @@
+.shirt {
+    background-image: url('../../../assets/hawaaiian-shirt.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.printed {
+    background-image: url('../../../assets/t-shirt.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.joggers {
+    background-image: url('../../../assets/joggers.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
