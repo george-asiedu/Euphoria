@@ -1,31 +1,52 @@
 <div class="w-full pb-16 px-20">
     <h2 class="border-l-4 border-borderColor pl-4 text-headerColor font-bold tracking-wide text-xl mb-8">Big Saving Zone</h2>
     <div class="grid grid-cols-3 gap-4 mb-4">
-        <div class="text-white rounded-xl hover:shadow-xl shirt">
+        <div class="text-white rounded-xl hover:shadow shirt cursor-pointer">
             <div class="flex flex-col gap-4 px-5 py-12">
                 <h3 class="font-bold text-3xl">Hawaiian <br> Shirts</h3>
                 <p class="text-sm">Dress up in summer vibe</p>
                 <h5 class="font-bold tracking-wide">UPTO 50% OFF</h5>
                 <fa-icon [icon]="faArrowDown" class="text-3xl mb-2 ml-10"></fa-icon>
-                <button class="uppercase w-32 text-sm font-medium py-3 rounded-md border-2 border-white">shop now</button>
+                <button class="uppercase w-28 text-xs font-medium py-2 rounded-md border-2 border-white">shop now</button>
             </div>
         </div>
-        <div class="text-white rounded-xl hover:shadow-xl printed">
+        <div class="text-white rounded-xl hover:shadow-xl printed cursor-pointer">
             <div class="flex flex-col gap-4 px-5 py-12 items-end">
                 <h3 class="font-bold text-3xl">Printed <br> T-Shirts</h3>
                 <p class="text-sm">New Designs Every Week</p>
                 <h5 class="font-bold tracking-wide">UPTO 50% OFF</h5>
                 <fa-icon [icon]="faArrowDown" class="text-3xl mb-2 mr-10"></fa-icon>
-                <button class="uppercase w-32 text-sm font-medium py-3 rounded-md border-2 border-white">shop now</button>
+                <button class="uppercase w-28 text-xs font-medium py-2 rounded-md border-2 border-white">shop now</button>
             </div>
         </div>
-        <div class="text-headerColor rounded-xl hover:shadow-xl joggers">
+        <div class="text-headerColor rounded-xl hover:shadow-xl joggers cursor-pointer">
             <div class="flex flex-col gap-4 px-5 py-12 items-end">
                 <h3 class="font-bold text-3xl">Cargo <br> Joggers</h3>
                 <p class="text-sm">Move with style & comfort</p>
                 <h5 class="font-bold tracking-wide">UPTO 50% OFF</h5>
-                <fa-icon [icon]="faArrowDown" class="text-3xl mb-2 mr-10"></fa-icon>
-                <button class="uppercase w-32 text-sm font-medium py-3 rounded-md border-2 border-buttonBorder">shop now</button>
+                <fa-icon [icon]="faArrowDown" class="text-3xl mb-2 mr-10 opacity-70"></fa-icon>
+                <button class="uppercase w-28 text-xs font-medium py-2 rounded-md border-2 border-buttonBorder">shop now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4">
+        <div class="text-headerColor rounded-xl hover:shadow-xl cursor-pointer urban">
+            <div class="flex flex-col gap-4 pr-24  py-12 items-end">
+                <h3 class="font-bold text-3xl">Urban <br> Shirts</h3>
+                <p class="text-sm">Live in Comfort</p>
+                <h5 class="font-bold tracking-wide">FLAT 60% OFF</h5>
+                <fa-icon [icon]="faArrowDown" class="text-3xl mb-2 mr-10 opacity-70"></fa-icon>
+                <button class="uppercase w-28 text-xs font-medium py-2 rounded-md border-2 border-buttonBorder">shop now</button>
+            </div>
+        </div>
+        <div class="text-headerColor rounded-xl hover:shadow-xl cursor-pointer oversized">
+            <div class="flex flex-col gap-4 pr-24  py-12 items-end">
+                <h3 class="font-bold text-3xl">Oversized<br> T-Shirts</h3>
+                <p class="text-sm">Street Style Icon</p>
+                <h5 class="font-bold tracking-wide">FLAT 60% OFF</h5>
+                <fa-icon [icon]="faArrowDown" class="text-3xl mb-2 mr-10 opacity-70"></fa-icon>
+                <button class="uppercase w-28 text-xs font-medium py-2 rounded-md border-2 border-buttonBorder">shop now</button>
             </div>
         </div>
     </div>

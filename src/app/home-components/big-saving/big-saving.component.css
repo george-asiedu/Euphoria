@@ -18,3 +18,17 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.urban {
+    background-image: url('../../../assets/urban.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.oversized {
+    background-image: url('../../../assets/oversized.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
