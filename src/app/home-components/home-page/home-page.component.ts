@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { MainNavbarComponent } from '../../navbars/main-navbar/main-navbar.component';
 import { FooterComponent } from '../../footer/footer.component';
 import { SliderComponent } from '../slider/slider.component';
+import { ExploreComponent } from '../explore/explore.component';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [MainNavbarComponent, FooterComponent, SliderComponent],
+  imports: [MainNavbarComponent, FooterComponent, SliderComponent, ExploreComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
 })
