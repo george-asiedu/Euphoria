@@ -1,10 +1,12 @@
 <div class="w-full pb-16 px-20">
     <h2 class="border-l-4 border-borderColor pl-4 text-headerColor font-bold tracking-wide text-xl mb-8">New Arrival</h2>
     <div class="grid grid-cols-4 gap-4">
-        <div *ngFor="let product of products" class="flex flex-col gap-4">
-            <img [src]="product.featuredImage.url" alt="{{ product.title }}">
-            <h4>{{ product.title }}</h4>
-            <p>{{ product.description }}</p>
+        <div *ngFor="let product of products" class="flex flex-col gap-4 shadow-lg rounded cursor-pointer">
+            <img [src]="product.featuredImage.url" alt="{{ product.title }}" class="rounded-t hover:opacity-80">
+            <div class="px-4 pb-4">
+                <h4 class="text-headerColor font-bold mb-3">{{ product.title }}</h4>
+                <p class="text-sm font-light text-paragrapghText">{{ product.description }}</p>
+            </div>
         </div>
     </div>
 </div>
