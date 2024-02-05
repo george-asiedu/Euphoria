@@ -22,7 +22,8 @@ module.exports = {
         formWidth: '600px'
       },
       height: {
-        authHeight: '50vh'
+        authHeight: '50vh',
+        shopHeight: '86vh'
       }
     },
   },
