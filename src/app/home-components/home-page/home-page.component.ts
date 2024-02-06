@@ -6,6 +6,7 @@ import { ExploreComponent } from '../explore/explore.component';
 import { NewArrivalsComponent } from '../new-arrivals/new-arrivals.component';
 import { BigSavingComponent } from '../big-saving/big-saving.component';
 import { MenComponent } from '../men/men.component';
+import { WomenComponent } from '../women/women.component';
 
 
 @Component({
@@ -18,7 +19,8 @@ import { MenComponent } from '../men/men.component';
     ExploreComponent, 
     NewArrivalsComponent,
     BigSavingComponent,
-    MenComponent
+    MenComponent,
+    WomenComponent
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
