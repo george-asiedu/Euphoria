@@ -5,6 +5,8 @@ import { SliderComponent } from '../slider/slider.component';
 import { ExploreComponent } from '../explore/explore.component';
 import { NewArrivalsComponent } from '../new-arrivals/new-arrivals.component';
 import { BigSavingComponent } from '../big-saving/big-saving.component';
+import { MenComponent } from '../men/men.component';
+
 
 @Component({
   selector: 'app-home-page',
@@ -15,7 +17,8 @@ import { BigSavingComponent } from '../big-saving/big-saving.component';
     SliderComponent, 
     ExploreComponent, 
     NewArrivalsComponent,
-    BigSavingComponent
+    BigSavingComponent,
+    MenComponent
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
