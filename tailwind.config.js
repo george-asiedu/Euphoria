@@ -24,7 +24,7 @@ module.exports = {
       },
       height: {
         authHeight: '50vh',
-        shopHeight: '86vh'
+        shopHeight: '87vh'
       }
     },
   },
