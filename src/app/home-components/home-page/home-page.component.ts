@@ -9,6 +9,7 @@ import { MenComponent } from '../men/men.component';
 import { WomenComponent } from '../women/women.component';
 import { BrandsComponent } from '../brands/brands.component';
 import { LimeLightComponent } from '../lime-light/lime-light.component';
+import { TestimonialsComponent } from '../testimonials/testimonials.component';
 
 
 @Component({
@@ -24,7 +25,8 @@ import { LimeLightComponent } from '../lime-light/lime-light.component';
     MenComponent,
     WomenComponent,
     BrandsComponent,
-    LimeLightComponent
+    LimeLightComponent,
+    TestimonialsComponent
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
