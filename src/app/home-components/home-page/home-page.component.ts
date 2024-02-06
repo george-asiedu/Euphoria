@@ -8,6 +8,7 @@ import { BigSavingComponent } from '../big-saving/big-saving.component';
 import { MenComponent } from '../men/men.component';
 import { WomenComponent } from '../women/women.component';
 import { BrandsComponent } from '../brands/brands.component';
+import { LimeLightComponent } from '../lime-light/lime-light.component';
 
 
 @Component({
@@ -22,7 +23,8 @@ import { BrandsComponent } from '../brands/brands.component';
     BigSavingComponent,
     MenComponent,
     WomenComponent,
-    BrandsComponent
+    BrandsComponent,
+    LimeLightComponent
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'

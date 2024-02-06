@@ -2,7 +2,6 @@
     background-image: url('../../../assets/coziness.png');
     background-position: center;
     background-repeat: no-repeat;
-    object-fit: cover;
     height: 350px;
 }
 
@@ -10,6 +9,5 @@
     background-image: url('../../../assets/breezy.png');
     background-position: center;
     background-repeat: no-repeat;
-    object-fit: cover;
     height: 350px;
 }
