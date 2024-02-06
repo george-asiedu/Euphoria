@@ -7,6 +7,7 @@ import { NewArrivalsComponent } from '../new-arrivals/new-arrivals.component';
 import { BigSavingComponent } from '../big-saving/big-saving.component';
 import { MenComponent } from '../men/men.component';
 import { WomenComponent } from '../women/women.component';
+import { BrandsComponent } from '../brands/brands.component';
 
 
 @Component({
@@ -20,7 +21,8 @@ import { WomenComponent } from '../women/women.component';
     NewArrivalsComponent,
     BigSavingComponent,
     MenComponent,
-    WomenComponent
+    WomenComponent,
+    BrandsComponent
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
