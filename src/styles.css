@@ -5,3 +5,8 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.active {
+    color: #3C4242;
+    font-weight: bold;
+}
