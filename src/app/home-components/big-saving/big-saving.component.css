@@ -32,3 +32,17 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.fashion {
+    background-image: url('../../../assets/fashion.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.big-save {
+    background-image: url('../../../assets/big-save.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
