@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, catchError, map, shareReplay, throwError } from 'rxjs';
+import { Products } from '../interfaces';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,8 @@ import { Observable } from 'rxjs';
 export class AuthServiceService {
   private authURL = 'https://sctsbackend.azurewebsites.net/api/Auth/login'
   private productURL = 'https://mock.shop/api?query={product(id:%20%22gid://shopify/Product/7982905098262%22){id%20title%20description%20featuredImage%20{id%20url}}}'
-  private menProductURL = 'https://fakestoreapi.com/products?limit=12'
+  private menProductURL = 'https://mock.shop/api?query={products(first:20){edges{node{id title description featuredImage{id url} variants(first:3){edges{node{price{amount currencyCode}}}}}}}}'
+  private products$!: Observable<Products[]>
 
   constructor(private http: HttpClient) { }
 
@@ -30,7 +32,18 @@ export class AuthServiceService {
     return this.http.get(this.productURL)
   }
 
-  getMenProducts(): Observable<any[]> {
-    return this.http.get<any[]>(this.menProductURL)
+  getMenProducts(): Observable<Products[]> {
+    if (!this.products$) {
+      this.products$ = this.http.get<any>(this.menProductURL)
+      .pipe(
+        map(response => response.data.products.edges.map((edge: any) => edge.node) as Products[]),
+        shareReplay(), // Cache the response
+        catchError(error => {
+          console.error('Error fetching products:', error);
+          return throwError(() => error); // or handle more specific errors
+        })
+      )
+    }
+    return this.products$;
   }
 }
