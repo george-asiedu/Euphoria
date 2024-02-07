@@ -22,8 +22,8 @@ module.exports = {
       width: {
         formWidth: '600px',
         products: '32%',
-        clothing: '72%',
-        price: '25%'
+        clothing: '80%',
+        price: '20%'
       },
       height: {
         authHeight: '50vh',
