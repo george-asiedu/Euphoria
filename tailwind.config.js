@@ -20,11 +20,14 @@ module.exports = {
         brandsColor: '#FBD103'
       },
       width: {
-        formWidth: '600px'
+        formWidth: '600px',
+        products: '30%'
       },
       height: {
         authHeight: '50vh',
-        shopHeight: '87vh'
+        shopHeight: '87vh',
+        productsHeight: '300px',
+        productImg: '200px'
       }
     },
   },

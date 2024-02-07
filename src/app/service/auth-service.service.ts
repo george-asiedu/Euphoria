@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 export class AuthServiceService {
   private authURL = 'https://sctsbackend.azurewebsites.net/api/Auth/login'
   private productURL = 'https://mock.shop/api?query={product(id:%20%22gid://shopify/Product/7982905098262%22){id%20title%20description%20featuredImage%20{id%20url}}}'
+  private menProductURL = 'https://fakestoreapi.com/products?limit=12'
 
   constructor(private http: HttpClient) { }
 
@@ -27,5 +28,9 @@ export class AuthServiceService {
 
   getProducts(): Observable<any> {
     return this.http.get(this.productURL)
+  }
+
+  getMenProducts(): Observable<any[]> {
+    return this.http.get<any[]>(this.menProductURL)
   }
 }
