@@ -21,7 +21,7 @@ module.exports = {
       },
       width: {
         formWidth: '600px',
-        products: '30%'
+        products: '32%'
       },
       height: {
         authHeight: '50vh',

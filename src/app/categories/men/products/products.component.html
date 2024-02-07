@@ -1,5 +1,5 @@
 <div class="w-full py-12">
-    <div class="flex items-center justify-between">
+    <div class="flex items-center justify-between mb-8">
         <h3 class="text-headerColor font-medium tracking-wide">Men's Clothing</h3>
         <div class="flex items-center gap-6">
             <button class="text-borderColor font-bold">New</button>
@@ -7,7 +7,7 @@
         </div>
     </div>
 
-    <div class="flex flex-wrap gap-3 w-full">
+    <div class="flex flex-wrap justify-between w-full">
         <div *ngFor="let product of products" class="flex flex-col gap-6 w-products h-productsHeight mb-3">
             <div class="relative h-productImg">
                 <img [src]="product.featuredImage.url" class="rounded-xl hover:opacity-80" alt="{{ product.title }}">
@@ -20,7 +20,7 @@
                     <h4 class="text-headerColor font-bold mb-1 text-sm">{{ product.title }}</h4>
                     <p class="text-xs font-medium opacity-50">Hoddie</p>
                 </span>
-                <div routerLink="/products" class="text-headerColor text-xs hover:bg-rose-500 font-bold bg-search py-2 px-4 tracking-wide rounded-md">
+                <div routerLink="/products" class="text-headerColor text-xs hover:bg-rose-50 font-bold bg-search py-2 px-4 tracking-wide rounded-md cursor-pointer">
                     $37.00
                 </div>
             </div>
